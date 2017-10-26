@@ -1,5 +1,13 @@
 @media screen and (max-width: 1200px){
-	
+	.footer-nav ul li {
+	    padding: 0 10px;
+	}
+	.stock_img{
+		width: 100%;
+	}
+	.stock_info_statistic2::after{
+		right: 23px;
+	}
 }
 @media screen and (max-width: 1170px){
 	.container {
@@ -8,11 +16,62 @@
 	.main-nav ul li{
 		padding: 0 11px;
 	}
+	.stock6 h5, .stock5 h5, .stock3 h4, .stock2_caption h2{
+		font-size: 24px;
+	}
+	.stock_info h3{
+		font-size: 38px;
+	}
+	.stock3::after{
+		top: 100px;
+	}
+	.stock_info h3{
+		font-size: 22px;
+	}
+	.dn{
+		display: none;
+	}
+	.stock_info_last{
+		width: 125%;
+		margin-left: 65px;
+	}
+	.stock3_caption {
+	    padding: 35px 0 40px 0;
+	}
 }
 @media screen and (max-width: 1024px){
 	header p {
 		background-size: cover;
 		padding: 0 60px;
+	}
+	.stock_info_price{
+		padding: 0;
+	}
+	.stock_info_last h3 {
+	    margin: 0 0 15px;
+	    font-size: 24px;
+	}
+	.stock5_left p {
+	    margin: 0;
+	    padding: 10px 0 0 0;
+	    font-size: 12px;
+	}
+	.circle {
+	    padding: 8px;
+	    width: 60px;
+	    height: 60px;
+	}
+	.item {
+	    width: 18%;
+	    padding-top: 20px;
+	    padding-bottom: 70px;
+	}
+	.circle p{
+		line-height: 40px;
+	}
+	.item::after {
+	    right: -18px;
+	    top: 16%;
 	}
 }
 @media screen and (max-width: 991px){
@@ -20,6 +79,9 @@
 	.menu-btn{
 		display: block ;
 		z-index: 2;
+	}
+	.stock5_left::after{
+		display: none;
 	}
 	.main-nav{
 		display: none;
@@ -31,6 +93,19 @@
 		border-top: 2px solid #e8663c;
 	}
 }
+@media screen and (max-width: 890px){
+	.box{
+		width: 100% !important;
+	}
+	.box p{
+		padding: 0;
+	}
+	.footer-nav ul li {
+		display: none;
+	}
+}
+
+
 @media screen and (max-width: 767px){
 	.main-nav ul{
 		margin: 0;
@@ -47,8 +122,24 @@
 		text-transform: uppercase;
 		font-size: 13px ;
 	}
+	.stock_info3 h3 {
+	    font-size: 24px;
+	    padding: 35px 0 20px 0;
+	}
+	.dn2{
+		display: none;
+	}
+	.stock6 h5, .stock5 h5, .stock3 h4, .stock2_caption h2{
+		font-size: 20px;
+	}
+	.stock6::after{
+		top: 70px;
+	}
 }
 @media screen and (max-width:580px) {
+	.questions_block h6::after{
+		display: none;
+	}
 	header p {display: none;}
 }
 @media screen and (max-width:480px) {

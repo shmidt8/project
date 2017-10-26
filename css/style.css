@@ -36,7 +36,7 @@ body {
 		font-size: 18px;
 		line-height: 48px;
 		margin: 0;
-		padding: 0 100px;
+		padding: 4px 80px;
 	}
 	.menu-btn{	
 		width: 40px;
@@ -132,6 +132,7 @@ body {
 /*====================stock==================*/
 .stock1 {
 	padding: 0;
+	background-color: #FCDFD6;
 	background-image: url(../img/bg_stock.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -322,7 +323,7 @@ body {
 .btn:hover{
 	opacity: 0.9;
 }
-.btn.btn_order::before{
+.btn.btn_order::before, .btn.btn_order2::before{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -403,6 +404,9 @@ body {
 	padding: 0;
 	font-weight: 400;
 	padding-bottom: 35px;
+}
+.dna::after{
+	display: none;
 }
 .stock_info_statistic2 {
 	font-size: 18px;
@@ -542,14 +546,17 @@ body {
 	background: linear-gradient(135deg, #9e1479 0%,#cf46aa 51%,#9e1479 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e1479', endColorstr='#9e1479',GradientType=1 );
 }
-.btn.btn_order2::after{
+.stock_info_statistic2{
+	position: relative;
+}
+.stock_info_statistic2::after{
 	content: "";
 	background: url(../img/btn-arrow.png) 0 0 no-repeat;
 	width: 60px;
 	height: 70px;
 	position: absolute;
-	top: -20px;
-    right: -60px;
+	top: 55px;
+    right: 55px;
 }
 
 .layout3{
@@ -638,7 +645,6 @@ body {
 	width: 30%;
 	padding: 8px;
 	padding-right: 15px;
-	margin: 0 auto;
 	color: #000;
 	font-size: 14px;
 	position: relative;
@@ -654,12 +660,53 @@ body {
 }
 .box1{
 	background: #F4E4DF;
+	margin-right: 20px;
+	position: relative;
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+}
+.block4 .box1::after{
+	content: "1";
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #fbf9f9;
+	font-weight: bold;
+	font-size: 130px;
 }
 .box2{
+	position: relative;
 	background: #E0DBEB;
+	margin-right: 20px;
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+}
+.block4 .box2::after{
+	content: "2";
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #fbf9f9;
+	font-weight: bold;
+	font-size: 130px;
 }
 .box3{
+	position: relative;
 	background: #C9D3DB;
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         4px 4px 6px 0px rgba(50, 50, 50, 0.25);
+}
+.block4 .box3::before{
+	content: "3";
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #fbf9f9;
+	font-weight: bold;
+	font-size: 130px;
 }
 
 
@@ -891,8 +938,10 @@ body {
 .layout6{
 	background: url(../img/bg5.png);
 }
-.stock_info3{
-	
+.stock_info.stock_info_last h4{
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
 }
 .btn.btn_order3{
 	display: block;
@@ -949,20 +998,32 @@ body {
 .form::after{
 	content: "";
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 23px;
+	left: 10px;
 	width: 23px;
 	height: 23px;
 	background: url(../img/ic.png) 0px 0px no-repeat;
 }
+.form::before{
+	content: "";
+	position: absolute;
+	top: 87px;
+	left: 10px;
+	width: 23px;
+	height: 23px;
+	background: url(../img/ic.png) 0px -35px no-repeat;
+}
+input:focus, input:active{
+	border: 1px solid #c73ea2;
+}
 input{
 	height: 55px;
 	
-	border: 1px solid #d9cfeb;
+	border: 2px solid #d9cfeb;
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 	margin-top: 7px;
-	padding: 25px 25px;
+	padding: 25px 40px;
 	width: 100%;
 }
 .stock_info_statistic3 {
